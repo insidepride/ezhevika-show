@@ -8,7 +8,7 @@ export function FAQSection() {
     <SectionHeading eyebrow="FAQ" title="Остались вопросы?" description="Собрали ответы на то, о чем чаще всего спрашивают перед заказом." />
     <Accordion type="single" collapsible className="rounded-[2rem] bg-white px-6 soft-shadow md:px-9">
       {faq.map((item, index) => <AccordionItem value={`item-${index}`} key={item.question} className="border-[#ead9df]">
-        <AccordionTrigger className="py-6 text-left text-lg font-black hover:no-underline md:text-xl">{item.question}</AccordionTrigger>
+        <AccordionTrigger className="py-6 text-left text-lg font-bold hover:no-underline md:text-xl">{item.question}</AccordionTrigger>
         <AccordionContent className="pb-7 pr-8 text-base leading-relaxed text-[#705b68]">{item.answer}</AccordionContent>
       </AccordionItem>)}
     </Accordion>

@@ -12,10 +12,10 @@ export function Header() {
       <a href="#top" className="shrink-0 leading-none" aria-label="ЕЖЕВИКА ШОУ — на главную">
         <span className="block text-[18px] font-black tracking-[.14em]">ЕЖЕВИКА</span><span className="mt-1 block text-[9px] font-bold tracking-[.38em] text-[#f4c977]">ШОУ</span>
       </a>
-      <nav aria-label="Основная навигация" className="hidden items-center gap-7 text-sm font-semibold lg:flex">{links.map(([name, href]) => <a key={href} className="transition hover:text-[#f4c977]" href={href}>{name}</a>)}</nav>
+      <nav aria-label="Основная навигация" className="hidden items-center gap-7 text-sm font-medium lg:flex">{links.map(([name, href]) => <a key={href} className="transition hover:text-[#f4c977]" href={href}>{name}</a>)}</nav>
       <div className="flex items-center gap-3">
-        <a href={contact.phoneHref} className="hidden text-sm font-bold transition hover:text-[#f4c977] xl:block">{contact.phoneDisplay}</a>
-        <a href="#request" className="hidden rounded-full bg-[#ef397c] px-5 py-3 text-sm font-extrabold shadow-lg shadow-pink-950/25 transition hover:-translate-y-0.5 hover:bg-[#ff4b8b] sm:block">Заказать праздник</a>
+        <a href={contact.phoneHref} className="hidden text-sm font-semibold transition hover:text-[#f4c977] xl:block">{contact.phoneDisplay}</a>
+        <a href="#request" className="hidden rounded-full bg-[#ef397c] px-5 py-3 text-sm font-semibold shadow-lg shadow-pink-950/25 transition hover:-translate-y-0.5 hover:bg-[#ff4b8b] sm:block">Заказать праздник</a>
         <button type="button" aria-label={open ? "Закрыть меню" : "Открыть меню"} aria-expanded={open} onClick={() => setOpen(!open)} className="grid h-11 w-11 place-items-center rounded-full border border-white/20 lg:hidden">{open ? <X /> : <Menu />}</button>
       </div>
     </div>
