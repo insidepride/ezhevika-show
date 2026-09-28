@@ -1,4 +1,5 @@
 import { Baby, CakeSlice, HeartHandshake, Sparkles, TrainFront, WandSparkles } from "lucide-react";
+import { assetPath } from "@/lib/asset-path";
 
 export const contact = {
   phoneDisplay: "+7 (964) 301-76-71",
@@ -8,12 +9,12 @@ export const contact = {
 };
 
 export const programs = [
-  { title: "День рождения", text: "Необычное поздравление для детей и взрослых с любимыми персонажами и яркими эмоциями.", cta: "Хочу поздравление", image: "/images/welcome-character.webp", icon: CakeSlice },
-  { title: "Выписка из роддома", text: "Создадим красивую и трогательную встречу для мамы, малыша и всей семьи.", cta: "Обсудить программу", image: "/images/babies-party.webp", icon: Baby },
-  { title: "Встреча с поезда", text: "Устроим неожиданную и эффектную встречу, которую точно будут вспоминать.", cta: "Заказать встречу", image: "/images/angels-wide.webp", icon: TrainFront },
-  { title: "Ростовые куклы", text: "Любимые персонажи появятся на вашем празднике, поздравят гостей и подарят море фотографий и эмоций.", cta: "Выбрать персонажа", image: "/images/baby-characters.webp", icon: HeartHandshake },
-  { title: "Зеркальные персонажи", text: "Эффектные сияющие персонажи для ярких поздравлений, встреч и праздничных мероприятий.", cta: "Смотреть образы", image: "/images/mirror-dragons-live.webp", icon: Sparkles },
-  { title: "Своя идея", text: "Есть необычная задумка? Расскажите нам — поможем превратить ее в настоящее шоу.", cta: "Рассказать идею", image: "/images/lotus-show.webp", icon: WandSparkles },
+  { title: "День рождения", text: "Необычное поздравление для детей и взрослых с любимыми персонажами и яркими эмоциями.", cta: "Хочу поздравление", image: assetPath("/images/welcome-character.webp"), icon: CakeSlice },
+  { title: "Выписка из роддома", text: "Создадим красивую и трогательную встречу для мамы, малыша и всей семьи.", cta: "Обсудить программу", image: assetPath("/images/babies-party.webp"), icon: Baby },
+  { title: "Встреча с поезда", text: "Устроим неожиданную и эффектную встречу, которую точно будут вспоминать.", cta: "Заказать встречу", image: assetPath("/images/angels-wide.webp"), icon: TrainFront },
+  { title: "Ростовые куклы", text: "Любимые персонажи появятся на вашем празднике, поздравят гостей и подарят море фотографий и эмоций.", cta: "Выбрать персонажа", image: assetPath("/images/baby-characters.webp"), icon: HeartHandshake },
+  { title: "Зеркальные персонажи", text: "Эффектные сияющие персонажи для ярких поздравлений, встреч и праздничных мероприятий.", cta: "Смотреть образы", image: assetPath("/images/mirror-dragons-live.webp"), icon: Sparkles },
+  { title: "Своя идея", text: "Есть необычная задумка? Расскажите нам — поможем превратить ее в настоящее шоу.", cta: "Рассказать идею", image: assetPath("/images/lotus-show.webp"), icon: WandSparkles },
 ] as const;
 
 export const benefits = [
@@ -24,14 +25,14 @@ export const benefits = [
 ] as const;
 
 export const gallery = [
-  { src: "/images/gold-rabbits.webp", alt: "Золотые зеркальные зайцы с гостьей праздника", label: "Золотые зайцы" },
-  { src: "/images/rose-ladies.webp", alt: "Артисты в образах белых роз с гостьей", label: "Леди Роза" },
-  { src: "/images/mirror-dragon.webp", alt: "Зеркальный персонаж Дракон на мероприятии", label: "Зеркальный дракон" },
-  { src: "/images/angels-wide.webp", alt: "Белые ангелы с большими крыльями", label: "Белые ангелы" },
-  { src: "/images/gold-rabbit-live.webp", alt: "Золотой зеркальный заяц приветствует гостей", label: "Встреча гостей" },
-  { src: "/images/lotus-show.webp", alt: "Световое шоу Лотос на сцене", label: "Шоу «Лотос»" },
-  { src: "/images/mirror-unicorn-child.webp", alt: "Зеркальный единорог поздравляет ребенка", label: "Единорог" },
-  { src: "/images/buffet-lady.webp", alt: "Леди-фуршет в белом праздничном образе", label: "Леди-фуршет" },
+  { src: assetPath("/images/gold-rabbits.webp"), alt: "Золотые зеркальные зайцы с гостьей праздника", label: "Золотые зайцы" },
+  { src: assetPath("/images/rose-ladies.webp"), alt: "Артисты в образах белых роз с гостьей", label: "Леди Роза" },
+  { src: assetPath("/images/mirror-dragon.webp"), alt: "Зеркальный персонаж Дракон на мероприятии", label: "Зеркальный дракон" },
+  { src: assetPath("/images/angels-wide.webp"), alt: "Белые ангелы с большими крыльями", label: "Белые ангелы" },
+  { src: assetPath("/images/gold-rabbit-live.webp"), alt: "Золотой зеркальный заяц приветствует гостей", label: "Встреча гостей" },
+  { src: assetPath("/images/lotus-show.webp"), alt: "Световое шоу Лотос на сцене", label: "Шоу «Лотос»" },
+  { src: assetPath("/images/mirror-unicorn-child.webp"), alt: "Зеркальный единорог поздравляет ребенка", label: "Единорог" },
+  { src: assetPath("/images/buffet-lady.webp"), alt: "Леди-фуршет в белом праздничном образе", label: "Леди-фуршет" },
 ] as const;
 
 export const faq = [

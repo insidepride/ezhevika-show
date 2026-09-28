@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { assetPath } from "@/lib/asset-path";
 import { ArrowDown, ArrowUpRight, Check, Phone, Sparkles } from "lucide-react";
 import { contact } from "@/data/site";
 
@@ -54,7 +55,7 @@ export function Hero() {
           <div className="absolute -right-3 top-8 hidden h-[78%] w-[86%] rounded-[3rem] border border-[#f5ce82]/35 lg:block" aria-hidden="true" />
           <div className="hero-photo soft-shadow absolute inset-0 overflow-hidden rounded-[2rem] bg-[#2f0927] sm:rounded-[3rem]">
             <Image
-              src="/images/hero-mirror-rabbits.webp"
+              src={assetPath("/images/hero-mirror-rabbits.webp")}
               alt="Зеркальные персонажи ЕЖЕВИКА ШОУ на выездном празднике"
               fill
               priority
